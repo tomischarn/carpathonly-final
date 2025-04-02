@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Path Only</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <img src="../img/logo-black.png" alt="car path logo" class="navlogo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="reviews.html">Reviews</a>
+                </li>
+                <li>
+                    <a href="findacourse.html">Find a Course</a>
+                </li>
+                <li>
+                    <a href="postyours.html">Post Yours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+        </nav>
+    </header>
+    <main>
+        <section class="review-section">
+            <div class="review-titlesection">
+                <h1 class="review-h1"> Post your review</h1>
+                <p class="subheadline review-subheadline">Help others enjoy</p>
+            </div>
+            <div class="review-wrapper">
+                <!-- Panel Izquierdo - Reviews -->
+                <div class="review-inputs">
+                    <form action="" id="review-form">
+                        <h3 class="form-title">
+                            Tell us about you
+                        </h3><br>
+                        <label class="label-form" for="nombre">Your Name</label> <br>
+                        <input class="input-form" type="text" name="nombre" placeholder="Jhon Doe"> <br>
+                        <label class="label-form" for="mail">Your email</label> <br>
+                        <input class="input-form" type="email" name="mail" placeholder="johndoe@aemail.com"><br>
+                        <label class="label-form" for="fecha">Date of Play</label> <br>
+                        <input class="input-form" type="date" name="fecha"><br><br>
+                        <h3 class="form-title">
+                            How was your round?
+                        </h3><br>
+                        <label class="label-form" for="coursename">Course Name</label> <br>
+                        <input class="input-form" type="text" name="coursename" placeholder="Shadow Creek Golf">
+                        <br><br>
+                        <label class="label-form" for="courselocation">Location</label> <br>
+                        <input class="input-form" type="text" name="location"
+                            placeholder="127 Calle Vieja, Bs.AS. Argentina"> <br><br>
+                        <input type="checkbox" name="rentalbuggys">
+                        <label class="label-form" for="rentalbuggys">Rental Buggys</label>
+                        <input type="checkbox" name="proshop">
+                        <label class="label-form" for="proshop">Proshop</label>
+                        <input type="checkbox" name="numberofholes">
+                        <label class="label-form" for="numberofholes">18 Holes</label> <br>
+                        <input type="checkbox" name="driving">
+                        <label class="label-form" for="driving">Driving</label>
+                        <input type="checkbox" name="showers">
+                        <label class="label-form" for="showers">Showers</label>
+                        <input type="checkbox" name="lodging">
+                        <label class="label-form" for="lodging">Lodging</label> <br>
+                        <label class="label-form" for="review-textarea">Add some little more about your experience
+                        </label> <br>
+                        <textarea class="review-textarea" name="review" id="review-textarea"></textarea> <br>
+                        <input class="button-review" type="button" value=" Post my Review">
+                    </form>
+                </div>
+                <!-- Panel Derecho - Reviews - Subir Imagen -->
+                <div class="review-attach">
+                    <form>
+                        <label class="attach-label" for="attach-image">Upload my pic</label> <br>
+                        <input class="attach-button" type="file" id="attach-image" name="attac-image">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Suscribirse al Newsletter -->
+        <section class="newsletter-section">
+            <div class="newsletter-wrapper">
+                <h2 class="newsletter-title">
+                    Discover our latest news!
+                </h2>
+
+                <p class="newsletter-p">
+                    Suscribe to our Newsletter and stay on track wit the latest info.
+                </p>
+
+                <form class="newsletter-form">
+                    <label for="mailsuscription"></label>
+                    <input type="mail" id="newsletter-mail" name="mailsuscription" placeholder="jhondoe@amail.com">
+                    <input type="button" value="Suscribe" id="newsletter-button">
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="reviews.html">Reviews</a>
+                </li>
+                <li>
+                    <a href="findacourse.html">Find a Course</a>
+                </li>
+                <li>
+                    <a href="postyours.html">Post Yours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <img src="../img/logo-banner.png" alt="logo car path only con forma de banderin">
+
+        </div>
+    </footer>
+</body>
+
+</html>
