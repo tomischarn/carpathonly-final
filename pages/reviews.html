@@ -5,65 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Path Only</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- CSS Link -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <header class="navbar">
-        <img src="../img/logo-black.png" alt="car path logo" class="navlogo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="reviews.html">Reviews</a>
-                </li>
-                <li>
-                    <a href="findacourse.html">Find a Course</a>
-                </li>
-                <li>
-                    <a href="postyours.html">Post Yours</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../img/logo-white.png" alt="logo for car path only">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a href="findacourse.html" class="nav-link ">Find a Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reviews.html" class="nav-link active">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="postyours.html" class="nav-link">Post Your Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <!-- Sección Hero - Reviews-->
-        <section class="hero-review">
-            <div class="hero-div">
-                <h1 class="hero-title">
-                    Course Name 1
-                </h1>
-
-                <p class="hero-description">
-                    18 Holes - New American Design
-                </p>
-
-                <p class="hero-courselocation">
-                    127 Calle Vieja, Buenos Aires, Arg.
-                </p>
+        <div class="card text-bg-dark" id="review-hero-card">
+            <img src="../img/torrey-pines-4.jpeg" class="card-img img-fluid img-hero-review"
+                alt="torrey pines golf course">
+            <div class="card-img-overlay">
+                <h5 class="card-title hero-review-title">Torrey Pines Golf Course (SC)</h5>
+                <p class="card-text">11480 N Torrey Pines Rd, La Jolla, CA 92037, Estados Unidos</p>
+                <p class="card-text"><small>18 Holes - New American Design</small></p>
             </div>
-        </section>
+        </div>
+
         <!-- Reviews-Seccion QuickStats-->
-        <section class="reviews-stats-section">
+        <section class="reviews-stats-section container">
             <h2 class="review-title"> Quick Stats</h2><br>
             <div class="reviews-stats">
                 <ul class="stat-list">
+                    <!-- Stat 1 -->
                     <li class="stat-item">
-                        <img class="stat-icon" src="../img/icon-ok.svg" alt=""> <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                            class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584l.013-.012.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354-.012.012A6.97 6.97 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0" />
+                        </svg> <br>
                         <p class="stat-name">
-                            Quick Stat 1
+                            Round Time
                         </p><br>
                         <p class="stat-value">
                             4:15hs
@@ -71,157 +80,198 @@
                         <p class="stat-caption">
                             Avg.
                         </p>
+                        <!-- Stat 2 -->
                     </li>
+                    <!-- Stat 2 -->
                     <li class="stat-item">
-                        <img class="stat-icon" src="../img/icon-ok.svg" alt=""> <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                            class="bi bi-piggy-bank-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069q0-.218-.02-.431c.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a1 1 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.74.74 0 0 0-.375.562c-.024.243.082.48.32.654a2 2 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595m7.173 3.876a.6.6 0 0 1-.098.21l-.044-.025c-.146-.09-.157-.175-.152-.223a.24.24 0 0 1 .117-.173c.049-.027.08-.021.113.012a.2.2 0 0 1 .064.199m-8.999-.65a.5.5 0 1 1-.276-.96A7.6 7.6 0 0 1 7.964 3.5c.763 0 1.497.11 2.18.315a.5.5 0 1 1-.287.958A6.6 6.6 0 0 0 7.964 4.5c-.64 0-1.255.09-1.826.254ZM5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0" />
+                        </svg> <br>
                         <p class="stat-name">
-                            Quick Stat 1
+                            Green Fee
                         </p><br>
                         <p class="stat-value">
-                            4:15hs
+                            $98,00
                         </p><br>
                         <p class="stat-caption">
-                            Avg.
+                            On Weekends
                         </p>
                     </li>
-
+                    <!-- Stat 3 -->
                     <li class="stat-item">
-                        <img class="stat-icon" src="../img/icon-ok.svg" alt=""> <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                            class="bi bi-flag-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                        </svg> <br>
                         <p class="stat-name">
-                            Quick Stat 1
+                            Score
                         </p><br>
                         <p class="stat-value">
-                            4:15hs
+                            77.4
                         </p><br>
                         <p class="stat-caption">
-                            Avg.
+                            Net Avg.
                         </p>
                     </li>
                 </ul>
             </div>
             <!-- Reviews-Seccion Summary -->
-            <h2 class="summary-title">Summary</h2>
-            <div class="reviews-summary">
-                <ul class="summary-list">
-                    <li class="summary-item">
-                        <img class="summary-icon" src="../img/icon-ok.svg" alt=""><br>
-                        <p class="summary-caption">
-                            Summary 1
-                        </p>
-                    </li>
-                    <li class="summary-item">
-                        <img class="summary-icon" src="../img/icon-ok.svg" alt=""><br>
-                        <p class="summary-caption">
-                            Summary 1
-                        </p>
-                    </li>
-                    <li class="summary-item">
-                        <img class="summary-icon" src="../img/icon-ok.svg" alt=""><br>
-                        <p class="summary-caption">
-                            Summary 1
-                        </p>
-                    </li>
-                    <li class="summary-item">
-                        <img class="summary-icon" src="../img/icon-ok.svg" alt=""><br>
-                        <p class="summary-caption">
-                            Summary 1
-                        </p>
-                    </li>
-                    <li class="summary-item">
-                        <img class="summary-icon" src="../img/icon-ok.svg" alt=""><br>
-                        <p class="summary-caption">
-                            Summary 1
-                        </p>
-                    </li>
-                    <li class="summary-item">
-                        <img class="summary-icon" src="../img/icon-ok.svg" alt=""><br>
-                        <p class="summary-caption">
-                            Summary 1
-                        </p>
-                    </li>
-                </ul>
+            <div class="container.fluid">
+                <h2 class="summary-title">Summary</h2>
+                <div class="reviews-summary">
+                    <ul class="summary-list">
+                        <li class="summary-item">
+                            <img class="summary-icon" src="../img/buggy-icon.svg" alt=""><br>
+                            <p class="summary-caption">
+                                Buggy
+                            </p>
+                        </li>
+                        <li class="summary-item">
+                            <img class="summary-icon" src="../img/caddie-icon.svg" alt=""><br>
+                            <p class="summary-caption">
+                                Caddies
+                            </p>
+                        </li>
+                        <li class="summary-item">
+                            <img class="summary-icon" src="../img/driving-icon.svg" alt=""><br>
+                            <p class="summary-caption">
+                                Driving
+                            </p>
+                        </li>
+                        <li class="summary-item">
+                            <img class="summary-icon" src="../img/proshop-icon.svg" alt=""><br>
+                            <p class="summary-caption">
+                                Proshop
+                            </p>
+                        </li>
+                        <li class="summary-item">
+                            <img class="summary-icon" src="../img/shower-icon.svg" alt=""><br>
+                            <p class="summary-caption">
+                                Showers
+                            </p>
+                        </li>
+                        <li class="summary-item">
+                            <img class="summary-icon" src="../img/lodging-icon.svg" alt=""><br>
+                            <p class="summary-caption">
+                                Lodging
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+
+
             </div>
+
         </section>
         <!-- Sección - Reviews + Fotos -->
         <section class="opinion-section">
-            <div class="opinion-wrapper">
+            <div class="container">
+                <h2 class="opinion-title">
+                    Our review
+                </h2>
                 <!-- Opinion 1 -->
-                <div class="opinion-box">
-                    <img class="opinion-img" src="../img/torrey-pines-1.jpeg" alt="">
-                    <div class="opinion-textwrapper">
-                        <h3 class="opinion-title"> Our review Is</h3>
-                        <p class="opinion-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta rem ducimus vero
-                            accusantium quis doloribus delectus voluptates amet, recusandae aliquid ipsa porro. Ut iste,
-                            nulla id itaque dolores modi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Temporibus dict.
-                        </p>
+                <div class="card mb-3 card-opinion" style="max-width: 100%;">
+                    <div class="row g-0 card-wrapper">
+                        <div class="col-md-4 img-wrapper">
+                            <img src="../img/torrey-pines-5.jpeg" class="img-fluid rounded" alt="...">
+                        </div>
+                        <div class="col-md-8 card-content">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Opinion 2 -->
-                <div class="opinion-box">
-                    <div class="opinion-textwrapper">
-                        <h3 class="opinion-title"> Our review Is</h3>
-                        <p class="opinion-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta rem ducimus vero
-                            accusantium quis doloribus delectus voluptates amet, recusandae aliquid ipsa porro. Ut iste,
-                            nulla id itaque dolores modi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Temporibus dict.
-                        </p>
+                <div class="card mb-3 card-opinion" style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../img/torrey-pines-2.jpeg" class="img-fluid rounded" alt="...">
+                        </div>
+                        <div class="col-md-8 card-content">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
-                    <img class="opinion-img" src="../img/torrey-pines-1.jpeg" alt="">
                 </div>
                 <!-- Opinion 3 -->
-                <div class="opinion-box">
-                    <img class="opinion-img" src="../img/torrey-pines-1.jpeg" alt="">
-                    <div class="opinion-textwrapper">
-                        <h3 class="opinion-title"> Our review Is</h3>
-                        <p class="opinion-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta rem ducimus vero
-                            accusantium quis doloribus delectus voluptates amet, recusandae aliquid ipsa porro. Ut iste,
-                            nulla id itaque dolores modi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Temporibus dict.
-                        </p>
+                <div class="card mb-3 card-opinion" style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../img/torrey-pines-6.jpeg" class="img-fluid rounded" alt="...">
+                        </div>
+                        <div class="col-md-8 card-content">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+
+
+
+
+
+
         </section>
         <!-- CTA Enviar tu review-->
         <section class="review-section">
-            <div class="postreview-wrapper">
-                <h2>
+            <div class="postreview-wrapper container">
+                <h2 class="headline-cta">
                     Submit your review
                 </h2>
                 <p class="subheadline-h2">
                     Your insights help others find the perfect cart-friendly course.
                 </p>
-                <a href="./postyours.html" class="cta-postreview">Post Your Review!</a>
+                <a href="postyours.html"><button class="btn btn-outline-success" type="submit">Post your
+                        Review</button></a>
             </div>
         </section>
     </main>
     <!-- Footer -->
-    <footer>
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="reviews.html">Reviews</a>
-                </li>
-                <li>
-                    <a href="./findacourse.html">Find a Course</a>
-                </li>
-                <li>
-                    <a href="./postyours.html">Post Yours</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ul>
-            <img src="../img/logo-banner.png" alt="logo car path only con forma de banderin">
+    <footer class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a href="findacourse.html" class="nav-link">Find a Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reviews.html" class="nav-link active">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="postyours.html" class="nav-link">Post Your Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="../index.html" class="navbar-brand">
+                <img src="../img/logo-white.png" alt="logo for car path only">
+            </a>
         </div>
     </footer>
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

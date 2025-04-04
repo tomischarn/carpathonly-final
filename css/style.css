@@ -1,46 +1,61 @@
 /* Estilos Generales */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: poppins;
 }
+
 /* Etiquetas Generales */
-body{
+body {
     font-family: poppins;
     margin: 0;
     padding: 0;
     background-color: #CCC9DC;
 }
-h1{
-    font-size: 84px;
+
+h1 {
+    font-size: 4em;
     font-weight: 800;
-    line-height: 123px;
+    line-height: auto;
     text-align: center;
     color: #D0BBA8;
     text-shadow: 0px 16px 40px rgba(88, 92, 95, 0.16);
 }
-.pagetitle{
-    color:#157A6E;
-}
 
-h5{
+.pagetitle {
     color: #157A6E;
-    font-weight: 600;
-    font-size: 16px;
-
 }
 
-@media (max-width:768px) {
-    h1{
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 60px;
-    text-align: center;
-    color: #D0BBA8;
-    text-shadow: 0px 16px 40px rgba(88, 92, 95, 0.16)
+h2 {
+    font-size: 3.1875em;
+    font-weight: 600;
+    line-height: auto;
+}
 
-    }
+h3 {
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: auto;
+    color: #157A6E;
+}
+
+h4 {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: auto;
+}
+
+
+h5 {
+    color: #157A6E;
+    font-size: 1.5625em;
+    font-weight: 600;
+    line-height: auto;
+}
+
+p {
+    font-size: 1em;
 }
 
 
@@ -52,6 +67,7 @@ h5{
     justify-content: space-between;
     align-items: center;
 }
+
 header nav {
     height: 40px;
     width: 50%;
@@ -59,26 +75,30 @@ header nav {
     justify-content: right;
     padding-right: 20px;
 }
-header nav ul{
+
+header nav ul {
     display: inline-flex;
     list-style: none;
     gap: 20px;
     align-items: center;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
     color: #CCC9DC;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
-header img{
+
+header img {
     max-width: 160px;
     max-height: 25 px;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
 footer nav {
     height: 40px;
     width: 50%;
@@ -86,20 +106,23 @@ footer nav {
     justify-content: right;
     padding-right: 20px;
 }
-footer nav ul{
+
+footer nav ul {
     display: inline-flex;
     list-style: none;
     gap: 20px;
     align-items: center;
 }
-footer nav ul li a{
+
+footer nav ul li a {
     text-decoration: none;
     color: #CCC9DC;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 }
-footer img{
+
+footer img {
     max-width: 160px;
     max-height: 25 px;
     margin-top: 20px;
@@ -107,7 +130,7 @@ footer img{
     margin-bottom: 20px;
 }
 
-footer div .container{
+footer div .container {
     width: 100%;
 }
 
@@ -115,7 +138,7 @@ footer div .container{
 .subheadline {
     font-size: 22px;
     font-weight: 600;
-    line-height: 33px;
+    line-height: auto;
     color: #D0BBA8;
     text-align: center;
 }
@@ -124,30 +147,31 @@ h2 {
     font-size: 68px;
     font-weight: 700;
     color: #157A6E;
-    line-height: 102px;
+    line-height: auto;
     text-align: center;
- }
+}
 
-.subheadline-h2{
-    font-size: 22px;
+.subheadline-h2 {
+    font-size: 1.375em;
     font-weight: 600;
-    line-height: 33px;
+    line-height: auto;
     color: #2D2A2F;
     text-align: center;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     .subheadline {
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 600;
-        line-height: 24px;
+        line-height: auto;
         color: #D0BBA8;
         text-align: center;
     }
-    .subheadline-h2{
-        font-size: 16px;
+
+    .subheadline-h2 {
+        font-size: 1em;
         font-weight: 600;
-        line-height: 24px;
+        line-height: auto;
         color: #2D2A2F;
         text-align: center;
     }
@@ -159,173 +183,177 @@ h2 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #CCC9DC 95.46%), linear-gradient(180deg, rgba(21, 122, 110, 0.16) 0%, rgba(21, 122, 110, 0.80) 82.37%), url(../img/torrey-pines-1.jpeg) lightgray 50% / cover no-repeat;
     align-content: center;
     justify-content: center;
-    height: 800px;      
+    height: 800px;
 }
 
 
-@media (max-width:768px){
+@media (max-width:768px) {
     .hero {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #CCC9DC 95.46%), linear-gradient(180deg, rgba(21, 122, 110, 0.16) 0%, rgba(21, 122, 110, 0.80) 82.37%), url(../img/torrey-pines-1.jpeg) lightgray 50% / cover no-repeat;
         align-content: center;
         justify-content: center;
-        height: 600px;      
-    }    
+        height: 600px;
+    }
 }
 
-@media (min-width:769px){
+@media (min-width:769px) {
     .searchbar {
-        max-width: 50%;      
-    }    
+        max-width: 50%;
+    }
 }
 
 /* -- Carrousel Section -- */
 
-.carrousel-section{
-        height: 800px;
-        align-content: center;
+.carrousel-section {
+    height: 800px;
+    align-content: center;
 }
 
-.card-title{
+.card-title {
     color: #157A6E;
 }
 
-.puntuacion svg{
-    color:#D0BBA8
+.puntuacion svg {
+    color: #D0BBA8
 }
 
-.direction{
-    font-size: 12px;
+.direction {
+    font-size: 0.75em;
 }
 
-.distance{
-    font-size: 20px;
+.distance {
+    font-size: 1.25em;
     font-weight: 600;
     color: #157A6E;
 }
 
-.card{
+.card {
     background-color: rgba(242, 242, 242, 5);
     height: 350px;
 }
 
-.card-img-top{
+.card-img-top {
     height: 200px;
 }
 
 /* Media Queries Cards 4 y 5 No visibles desde MD y Corregir tamaños de resto de Cards*/
-@media (max-width: 768px)  {
-    .card-4{
+@media (max-width: 768px) {
+    .card-4 {
         display: none;
     }
 
-    .card-5{
+    .card-5 {
         display: none;
     }
 
-    .card{
+    .card {
         max-height: 40%;
     }
 }
 
 
 /* Mapa Campos Cerca */
-.map-section{
+.map-section {
     height: 600px;
     align-content: center;
 }
 
-.map{
+.map {
     padding: 1rem;
 }
 
-.map-text{
-    font-size: 16px;
+.map-text {
+    font-size: 1em;
     font-weight: 600;
     color: #2D2A2F;
     text-align: left;
-    padding:1rem;
+    padding: 1em;
 }
 
 @media (max-width:768px) {
-    .map-text{
-        font-size: 14px;
+    .map-text {
+        font-size: 0.875em;
         font-weight: 600;
         color: #2D2A2F;
         text-align: center;
-        padding:1rem;
+        padding: 1rem;
     }
 
-    .section-title{
-        font-size: 36px;
+    .section-title {
+        font-size: 2.25em;
     }
 }
 
-
-.review-section{
+/* CTA Post your review Section */
+.review-section {
     background: linear-gradient(0deg, rgba(204, 201, 220, 0.00) 73.13%, rgba(204, 201, 220, 0.30) 86.56%, var(--Colors-Neutral-100, #CCC9DC) 100%), linear-gradient(180deg, rgba(204, 201, 220, 0.00) 74%, rgba(204, 201, 220, 0.30) 85.53%, var(--Colors-Neutral-100, #CCC9DC) 97.06%), linear-gradient(0deg, rgba(114, 86, 61, 0.80) 0%, rgba(114, 86, 61, 0.80) 100%), url(../img/kiawah-7.jpg) lightgray 50% / cover no-repeat;
     background-position: center;
-    height: 800px;
     align-content: center;
+    justify-content: center;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     .review-section {
         background: linear-gradient(0deg, rgba(204, 201, 220, 0.00) 73.13%, rgba(204, 201, 220, 0.30) 86.56%, var(--Colors-Neutral-100, #CCC9DC) 100%), linear-gradient(180deg, rgba(204, 201, 220, 0.00) 74%, rgba(204, 201, 220, 0.30) 85.53%, var(--Colors-Neutral-100, #CCC9DC) 97.06%), linear-gradient(0deg, rgba(114, 86, 61, 0.80) 0%, rgba(114, 86, 61, 0.80) 100%), url(../img/kiawah-7.jpg) lightgray 50% / cover no-repeat;
         background-position: center;
-        height: 600px;      
-    }    
+    }
 }
 
 
-.postreview-wrapper{
-    height: 350px;
+.postreview-wrapper {
+    height: 22em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
+@media (max-width:768px) {
+    .headline-cta {
+        font-size: 1.5em;
+    }
+}
+
+.checked {
+    color: orange;
+}
+
+
 /* PAGES */
+
+
 /* PAGE Reviews */
-.hero-review{
+#review-hero-card {
     height: 400px;
-    display: block;
+    object-fit: cover;
+    display: flex;
 }
-.hero-div{
-    background-image: url(../img/torrey-pines-2.jpeg);
-    background-size: cover;
-    background-position: bottom;
+
+.img-hero-review {
     height: 100%;
-    padding: 40px;
+    object-fit: cover;
+    object-position: 100% 60%;
+    opacity: 0.5;
 }
-.hero-title{
-    font-size: 36px;
-    font-weight: 600;
-    text-align: left;
-    color: #F2F2F2;
-    width: 40%;
-    height: 85px;
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 1rem 1rem;
 }
-.hero-description{
-    font-size: 18px;
-    color: #F2F2F2;
-    font-weight: 500;
-    text-align: left;
-    width: 40%;
+
+.hero-review-title {
+    color: #f2f2f2;
 }
-.hero-courselocation{
-    font-size: 14px;
-    color: #F2F2F2;
-    font-weight: 400;
-    text-align: left;
-    width: 40%;
-}
- /*  Reviews- Sección Quick Stats */
-.reviews-stats-section{
-    height: 500px;
+
+/*  Reviews- Sección Quick Stats */
+.reviews-stats-section {
     width: 100%;
+    padding: 2rem 0 2rem 0;
 }
-.review-stats{
+
+.review-stats {
     width: 100%;
     height: 50%;
     display: flex;
@@ -333,54 +361,99 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-.review-title{
+
+.review-title {
     height: 40px;
-    font-size: 36px;
+    font-size: 2.25em;
     text-align: center;
-    margin-left: 40px;
     margin-top: 0px;
     margin-bottom: 20px;
 }
-.stat-list{
+
+.stat-list {
     text-align: center;
     display: flex;
-    gap: 20px;
+    gap: 1.2rem;
     list-style: none;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
-.stat-item{
+
+.stat-item {
     width: 15%;
     height: 30%;
+    color: #157A6E;
 }
-.stat-icon{
-   width: 48px;
-}
-.stat-name{
-    font-size: 18px;
+
+.stat-name {
+    font-size: 1.2rem;
     font-weight: 500;
     height: 12px;
+    color: #2D2A2F;
 }
-.stat-value{
-    font-size:24px;
+
+.stat-value {
+    font-size: 24px;
     font-weight: 700;
     height: 20px;
+    color: #157A6E;
 }
-.stat-caption{
+
+.stat-caption {
     font-size: 14px;
     font-style: italic;
     height: 8px;
+    color: #2D2A2F;
 }
+
+
+@media (max-width:768px) {
+    .stat-list {
+        display: flex;
+        gap: 4rem;
+        list-style: none;
+        margin: 1rem 0 5rem 0;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .stat-item {
+        width: 20%;
+        height: 30%;
+    }
+
+    .stat-name {
+        font-size: 0.8rem;
+        font-weight: 500;
+        height: 0.625rem;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        height: 0.5rem;
+    }
+
+    .stat-caption {
+        font-size: 0.8rem;
+        font-style: italic;
+        height: 0.5rem;
+    }
+}
+
+
+
+/* HASTA ACÁ REVISÉ FONT CON EMS */
+
 /* Stats - Sección Summary */
-.reviews-summary{
-    width: 100%;
-    height: 30%;
+.reviews-summary {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.summary-title{
+
+.summary-title {
     height: 40px;
     font-size: 24px;
     text-align: center;
@@ -388,128 +461,141 @@ h2 {
     margin-top: 0px;
     margin-bottom: 20px;
 }
-.summary-list{
+
+.summary-list {
     text-align: center;
     display: flex;
-    gap: 12px;
+    gap: 4rem;
     list-style: none;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+}
+
+.summary-item {
+    width: 3rem;
+    height: 2rem;
+}
+
+.summary-icon {
+    width: 3rem;
+}
+
+.summary-caption {
+    font-size: 0.875rem;
+    font-style: italic;
+    height: 0.5rem;
+}
+
+/* Review - Opinion Section */
+.opinion-section {
+    margin: 3rem 0 3rem 0;
+}
+
+.opinion-title {
+    height: 40px;
+    font-size: 2.25em;
+    text-align: center;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
-.summary-item{
-    width: 15%;
-    height: 20%;
+
+
+.card-opinion {
+    max-height: fit-content;
 }
-.summary-icon{
-    width: 36px;
+
+.card-content {
+    max-height: fit-content;
 }
-.summary-caption{
-    font-size: 14px;
-    font-style: italic;
-    height: 8px;
-}
-/* Review - Opinion Section */
-.opinion-section{
-    height: 800px;
-}
-.opinion-wrapper{
-    height: 100%;
+
+.card-opinion div div img {
     width: 100%;
-    padding: 40px;
-    gap: 18px;
+    height: 7rem;
+    object-fit: cover;
+    object-position: 80% 50%;
+    margin: 0.5rem;
+
 }
-.opinion-box{
-    height: 30%;
-    width: 100%;
-    display: flex;
-    margin: 20px;
+
+@media (max-width:768px) {
+    .card-opinion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-opinion div div img {
+        width: 95%;
+        object-fit: cover;
+    }
+
+    .card-opinion div .card-content {
+        max-height: 50%;
+    }
+
 }
-.opinion-img{
-    height: 90%;
-    width: 30%;
-    border-radius: 12px;
-    margin: 10px;
-}
-.opinion-textwrapper{
-    justify-content: center;
-    width: 60%;
-    height: 80%;
-    margin: 10px;
-}
-.opinion-title{
-    font-size: 24px;
-}
-.opinion-text{
-    font-size: 16px;
-    font-weight: 500px;
-}
+
+
 /* Search a Course */
-.hero-search{
-    height: 350px;
+.hero-search {
     align-content: center;
     background: linear-gradient(0deg, #CCC9DC 0%, #157A6E 100%);
 }
-.wrapper-search{
-    height: 350px;
-    padding-bottom: 60px;
-    width: 100%;
+
+.resultados-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap:24px;
 }
-.title-search{
-    font-size: 64px;
-    color: #157A6E;
-    height: 80px;
+
+.resultados-wrapper h3 {
+    padding-left: 1.5em;
 }
-#subheadline-search{
-    color: #157A6E;
-}
-#input-search{
-    width: 30%;
-    height: 24px;
-}
-#searchbutton-search{
-    width: 10%;
-    height: 24px;
-    background-color: #157A6E;
-    color: #F2F2F2;
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 24px;
+
+@media (max-width:768px) {
+    .resultados-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resultados-wrapper h3 {
+        text-align: center
+    }
 }
 
 /* Cards Horizontales + Media Queries */
 
-.resultados{
-    height: 1200px;
+.resultados {
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
-.card-hztal{
+.card-hztal {
     max-width: 100%;
     max-height: 15rem;
     flex-direction: row;
     margin-bottom: 0.5rem;
 }
 
-.card-hztal img{
-    max-width:30%;
+.card-hztal img {
+    max-width: 30%;
     border-radius: 0.25rem;
     padding: 0.5 rem;
     margin: 1rem;
 }
 
-.card-body-result{
+.card-body-result {
     display: flex;
     justify-content: space-between;
 }
 
-.card-main-section{
+.card-main-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -517,60 +603,56 @@ h2 {
     max-width: 40%;
 }
 
-.stat-section{
+.stat-section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.icons-top-card{
+.icons-top-card {
     display: flex;
     justify-content: center;
     gap: 1rem;
     text-align: center;
 }
 
-.course-direction{
+.course-direction {
     font-size: 0.8rem;
 }
 
-.stars-card{
+.stars-card {
     color: #D0BBA8;
 }
 
-.badge-section{
+.badge-section {
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem;
     justify-content: flex-end;
 }
 
-@media (max-width:768px){
-    .resultados{
-        height: 800px;
-    }
+@media (max-width:768px) {
 
-    .card-hztal{
+    .card-hztal {
         max-width: 60em;
         max-height: 15rem;
         flex-direction: row;
     }
-    
-    .card-hztal img{
-        max-width:30%;
+
+    .card-hztal img {
+        max-width: 30%;
         border-radius: 0.25rem;
-        padding: 0.5 rem;
         margin: 1rem;
     }
-    
-    .card-body-result{
+
+    .card-body-result {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    
-    .card-main-section{
+
+    .card-main-section {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -578,35 +660,35 @@ h2 {
         max-width: 100%;
     }
 
-    .card-main-section h5{
+    .card-main-section h5 {
         font-size: 1rem;
     }
-    
-    .stat-section{
+
+    .stat-section {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         margin-top: 0.8rem;
     }
-    
-    .icons-top-card{
+
+    .icons-top-card {
         display: flex;
         justify-content: space-between;
         gap: 0.8rem;
         text-align: center;
         font-size: 0.8rem;
     }
-    
-    .course-direction{
+
+    .course-direction {
         font-size: 0.7rem;
     }
-    
-    .stars-card{
+
+    .stars-card {
         color: #D0BBA8;
     }
-    
-    .badge-section{
+
+    .badge-section {
         display: flex;
         flex-wrap: wrap;
         gap: 0.2rem;
@@ -615,43 +697,32 @@ h2 {
 }
 
 
-
-
-
-
 /* Post your Review */
-.revsdaiew-h1{
-    color: #157A6E ;
+.review-h1 {
+    color: #157A6E;
 }
-.review-wrapper{
-    width: 100 dvh;
-    height: 800px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.form-title{
+
+
+.form-title {
     font-size: 24px;
     font-weight: 500px;
     height: 25px;
-    color:#2D2A2F;
+    color: #2D2A2F;
 }
-.review-inputs{
+
+.review-inputs {
     width: 100%;
     height: 600px;
     text-align: left;
     justify-items: center;
 }
-.review-textarea{
+
+.review-textarea {
     width: 80%;
     height: 60px;
 }
-.review-attach{
+
+.review-attach {
     width: 100%;
     height: 600px;
     align-content: center;
@@ -662,7 +733,8 @@ h2 {
     border-width: 4px;
     border-radius: 12px;
 }
-.button-review{
+
+.button-review {
     background-color: #D0BBA8;
     color: #157A6E;
     font-weight: 600;
@@ -671,78 +743,85 @@ h2 {
     height: 40px;
     margin-top: 24px;
 }
+
 /* Conctact */
-.contact-section{
-    margin-left: 100px;
-    height: 850px;
-    align-content: center;
-    display: flex;
-    padding: 50px;
-}
+
 .contact-wrapper{
+    background-color: rgba(242, 242, 242, 0.4);
+    height: fit-content;
+    padding: 1rem;
+}
+
+.img-contact img{
+    height: 100%;
     width: 100%;
-    height: 850px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 28px;
-    margin: 50 px;
-    justify-content: left;
-    align-content: left;
-    text-align: left;
-}
-.contact-img{
-    margin-top: 80px;
-    align-content: center;
-    width: 600px;
-    height: 80%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 0.5rem;
 }
-.label-form{
-    font-size: 14px;
-    font-weight: 500;
-}
-.input-form{
-    width: 250px;
-}
-.textarea-contact{
-    width: 250px;
-    height: 200px;
-}
+
 /* Newsletter */
-.newsletter-section{
-    height: 400px;
+.newsletter-section {
+    height: 25em;
     align-content: center;
     justify-content: center;
     background-color: #157A6E;
-    margin-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
 }
-.newsletter-wrapper{
+
+.newsletter-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.875em;
 }
-.newsletter-title{
+
+.newsletter-title {
     color: #f2f2f2;
 }
-.newsletter-p{
+
+.newsletter-p {
     color: #f2f2f2;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
-    margin-bottom: 24px;
+    margin-bottom: 1.5em;
 }
-#newsletter-mail{
+
+#newsletter-mail {
     width: 250px;
     height: 30px;
 }
-#newsletter-button{
+
+#newsletter-button {
     width: 80px;
     height: 30px;
     color: #157A6E;
     background-color: #D0BBA8;
     font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .newsletter-title {
+        color: #f2f2f2;
+        font-size: 1.5em;
+    }
+
+    .newsletter-p {
+        color: #f2f2f2;
+        font-size: 1em;
+        font-weight: 500;
+        margin-bottom: 1.5em;
+    }
+
+    #newsletter-mail {
+        width: 50%;
+        height: 10%;
+    }
+
+    #newsletter-button {
+        width: 80px;
+        height: 30px;
+        color: #157A6E;
+        background-color: #D0BBA8;
+        font-weight: 600;
+    }
 }
