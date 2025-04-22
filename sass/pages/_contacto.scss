@@ -49,10 +49,12 @@
             }
         }
         .send-button{
+            
             justify-content: center;
             padding: 1rem;
             button{
                 width: 30%;
+                @extend %button-primary;
             }
         }
     }

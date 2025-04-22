@@ -1,211 +1,355 @@
-.card {
-    height: 25rem;
-    display: flex;
-
-    img {
-        height: 100%;
-        object-fit: cover;
-        object-position: 100% 90%;
-        opacity: 0.5;
-
-        @media (max-width:768px) {
-            object-position: 40% 60%;
-        }
-    }
-
-    .card-img-overlay {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin: 0 0 1rem 1rem;
-
-        h5 {
-            color: $colors-neutral-white;
-            font-size: $fonts-size-font-size-xl;
-
-            @media (max-width:768px) {
-                font-size: $fonts-size-font-size-m;
-            }
-        }
-
-        .card-text {
-            color: $colors-neutral-100;
-
-        }
-    }
-}
-
-.reviews-stats-section {
-    width: 100%;
-    margin-top: 2rem;
-    border-radius: $radius-l;
-    padding: 3rem 0 4rem 0;
-    background-color: $colors-neutral-200;
-    @extend %shadow-3;
+.hero-review {
+    @include section-centered-s;
+    background: linear-gradient(0deg, $colors-neutral-100 0%, $colors-primary-400 100%);
+    height: 200px;
     @media (max-width:768px) {
-        width: 90%;
+        height: 150px;
         
     }
 
-    h2 {
-        height: 40px;
-        font-size: $fonts-size-font-size-xxl;
+    .container {
         text-align: center;
-        margin-top: 0px;
-        margin-bottom: 20px;
+        height: 100%;
 
+        h1 {
+            color: $colors-secondary-100;
 
+        }
+
+        p {
+            @include subheadline;
+            color: $colors-neutral-100;
+            @media (max-width:768px) {
+                color: $colors-primary-400;
+                
+            }
+
+        }
+        
     }
+}
 
-    .reviews-stats {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
 
-        ul {
-            text-align: center;
-            display: flex;
-            gap: 5rem;
-            list-style: none;
-            justify-content: center;
-            margin-bottom: 2.5rem;
+
+
+
+
+// Seccion Carrousel - review
+
+.section-carrousel-review {
+    height: 35rem;
+    align-content: center;
+
+    .contenedor-nuevas {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        @media (max-width:768px) {
+            overflow-x: auto;
+
+        }
+
+        .card-nueva {
+            width: 30rem;
+            height: 20rem;
+            margin: 1rem;
+            background-color: $colors-neutral-white;
+            border-radius: $radius-xl;
+            padding: 0.5rem;
+            box-shadow: 0px 16px 40px -8px rgba(88, 92, 95, 0.16);
+
+            &:hover {
+                background-color: $colors-secondary-200;
+            }
+
             @media (max-width:768px) {
                 width: 80%;
-                gap: 1rem;
-                justify-content: center;
             }
 
-            li {
-                width: 100%;
-                height: 30%;
-                color: $colors-primary-400;
-
-                svg {}
-
-                .stat-name {
-                    font-size: $fonts-size-font-size-s;
-                    font-weight: 500;
-                    height: 0.85rem;
-                    color: $colors-neutral-800;
+            .img-contenedor {
+                img {
+                    height: 12.5rem;
+                    width: 100%;
+                    border-radius: $radius-m ;
+                    object-fit: cover;
+                    box-shadow: 0px 2px 4px 0px rgba(27, 28, 29, 0.04);
                 }
+            }
 
-                .stat-value {
-                    font-size: $fonts-size-font-size-l;
-                    font-weight: 700;
-                    height: 20px;
+            .card-cuerpo {
+                h5 {
                     color: $colors-primary-400;
+                    font-size: $fonts-size-font-size-m;
+                    padding-top: 0.5rem;
+
                 }
 
-                .stat-caption {
-                    font-size: $fonts-line-height-line-height-3xxs;
-                    font-style: italic;
-                    height: 2rem;
-                    color: $colors-neutral-800;
-                }
-            }
-        }
-    }
-
-    div {
-        h2 {
-            height: 2.5rem;
-            font-size: $fonts-size-font-size-xl;
-            text-align: center;
-            margin-top: 0px;
-            margin-bottom: 20px;
-        }
-
-        .reviews-summary {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-
-            ul {
-                text-align: center;
-                display: flex;
-                list-style: none;
-                justify-content: center;
-                gap: 3rem;
-                @media (max-width:768px) {
-                    flex-wrap: wrap;
-                }
-
-                li {
-                    width: 3rem;
-                    height: 2rem;
-
-                    img {
-                        width: 3rem;
+                div {
+                    svg {
+                        color: $colors-secondary-100;
                     }
+                }
+
+                .distance-container {
+                    button {
+                        @extend %button-primary;
+                    }
+                }
+
+                .direction-container {
+                    padding-bottom: 1rem;
 
                     p {
-                        font-size: 0.875rem;
-                        font-style: italic;
-                        height: 0.5rem;
+                        font-size: $fonts-size-font-size-3xxs;
+                        color: $colors-neutral-600;
                     }
                 }
+
             }
         }
     }
 }
 
-.opinion-section {
-    margin: 4rem 0 4rem 0;
-    .container {
-
-        h2 {
-            height: 40px;
-            font-size: $fonts-size-font-size-xxl;
-            text-align: center;
-            margin-top: 0px;
-            margin-bottom: 20px;
-        }
-
-        .card {
-            max-height: fit-content;
-            @extend %shadow-3;
-            height: 15.5rem;
-            @media (max-width:768px) {
-                width: 95%;
-                height: auto;
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                h1 {}
             }
 
-
-
-            .row {
-                .img-wrapper {
-                    @media (max-width:768px) {
-                        height: fit-content;
-                        width: auto;
-                    }
+            .modal-body {
+                .card {
+                    height: 25rem;
+                    display: flex;
 
                     img {
-                        width: 100%;
-                        height: 12.5rem;
+                        height: 100%;
                         object-fit: cover;
-                        object-position: 80% 50%;
-                        margin: 0.5rem;
+                        object-position: 100% 90%;
+                        opacity: 0.5;
+
                         @media (max-width:768px) {
-                            height: 50%;
-                            width: 95%;
+                            object-position: 40% 60%;
+                        }
+                    }
+
+                    .card-img-overlay {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        margin: 0 0 1rem 1rem;
+
+                        h5 {
+                            color: $colors-neutral-white;
+                            font-size: $fonts-size-font-size-xl;
+
+                            @media (max-width:768px) {
+                                font-size: $fonts-size-font-size-m;
+                            }
                         }
 
+                        .card-text {
+                            color: $colors-neutral-100;
+
+                        }
                     }
                 }
 
-                .card-content {
-                    .card-body {
-                        h5 {
-                            color: $colors-primary-400;
+                .reviews-stats-section {
+                    width: 100%;
+                    margin-top: 2rem;
+                    border-radius: $radius-l;
+                    padding: 3rem 0 4rem 0;
+                    background-color: $colors-neutral-200;
+                    @extend %shadow-3;
+
+                    @media (max-width:768px) {
+                        width: 90%;
+
+                    }
+
+                    h2 {
+                        height: 40px;
+                        font-size: $fonts-size-font-size-xxl;
+                        text-align: center;
+                        margin-top: 0px;
+                        margin-bottom: 20px;
+
+
+                    }
+
+                    .reviews-stats {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+
+                        ul {
+                            text-align: center;
+                            display: flex;
+                            gap: 5rem;
+                            list-style: none;
+                            justify-content: center;
+                            margin-bottom: 2.5rem;
+
+                            @media (max-width:768px) {
+                                width: 80%;
+                                gap: 1rem;
+                                justify-content: center;
+                            }
+
+                            li {
+                                width: 100%;
+                                height: 30%;
+                                color: $colors-primary-400;
+
+                                svg {}
+
+                                .stat-name {
+                                    font-size: $fonts-size-font-size-s;
+                                    font-weight: 500;
+                                    height: 0.85rem;
+                                    color: $colors-neutral-800;
+                                }
+
+                                .stat-value {
+                                    font-size: $fonts-size-font-size-l;
+                                    font-weight: 700;
+                                    height: 20px;
+                                    color: $colors-primary-400;
+                                }
+
+                                .stat-caption {
+                                    font-size: $fonts-line-height-line-height-3xxs;
+                                    font-style: italic;
+                                    height: 2rem;
+                                    color: $colors-neutral-800;
+                                }
+                            }
+                        }
+                    }
+
+                    div {
+                        h2 {
+                            height: 2.5rem;
+                            font-size: $fonts-size-font-size-xl;
+                            text-align: center;
+                            margin-top: 0px;
+                            margin-bottom: 20px;
                         }
 
-                        p {
-                            color: $colors-neutral-800;
+                        .reviews-summary {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+
+                            ul {
+                                width: 80%;
+                                text-align: center;
+                                display: flex;
+                                list-style: none;
+                                justify-content: center;
+                                gap: 2rem;
+                                flex-wrap: wrap;
+
+                                @media (max-width:768px) {
+                                    flex-wrap: wrap;
+                                }
+
+                                li {
+                                    width: 3rem;
+                                    height: 2rem;
+
+                                    img {
+                                        width: 3rem;
+                                    }
+
+                                    p {
+                                        font-size: 0.875rem;
+                                        font-style: italic;
+                                        height: 0.5rem;
+                                    }
+                                }
+                            }
                         }
+                    }
+                }
+
+                .opinion-section {
+                    margin: 4rem 0 4rem 0;
+
+                    .container {
+
+                        h2 {
+                            height: 40px;
+                            font-size: $fonts-size-font-size-xxl;
+                            text-align: center;
+                            margin-top: 0px;
+                            margin-bottom: 20px;
+                        }
+
+                        .card {
+                            max-height: fit-content;
+                            @extend %shadow-3;
+                            height: 15.5rem;
+
+                            @media (max-width:768px) {
+                                width: 95%;
+                                height: auto;
+                            }
+
+
+
+                            .row {
+                                .img-wrapper {
+                                    @media (max-width:768px) {
+                                        height: fit-content;
+                                        width: auto;
+                                    }
+
+                                    img {
+                                        width: 100%;
+                                        height: 12.5rem;
+                                        object-fit: cover;
+                                        object-position: 80% 50%;
+                                        margin: 0.5rem;
+
+                                        @media (max-width:768px) {
+                                            height: 50%;
+                                            width: 95%;
+                                        }
+
+                                    }
+                                }
+
+                                .card-content {
+                                    .card-body {
+                                        h5 {
+                                            color: $colors-primary-400;
+                                        }
+
+                                        p {
+                                            color: $colors-neutral-800;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            .modal-footer {
+                .btn-primary {
+                    @extend %button-primary;
+                    a{
+                        color: $colors-neutral-white;
+                        text-decoration: none;
                     }
                 }
             }

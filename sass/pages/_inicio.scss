@@ -12,7 +12,7 @@
         div {
             form {
                 button {
-                    @extend %button-bg;
+                    @extend %button-primary;
                 }
             }
         }
@@ -161,18 +161,18 @@
 
         h2 {
             @extend %shadow-3;
-            color: $colors-primary-100
+            color: $colors-primary-200
         }
 
         p {
             @include subheadline;
-            color: $colors-neutral-300;
-
+            color: $colors-neutral-200;
         }
 
         a {
             height: 100%;
             @extend %shadow-3;
+            @extend %button-primary;
         }
     }
 }

@@ -55,11 +55,11 @@
         <!-- Sección Hero-->
         <section class="hero">
             <div class="container">
-                <h1>
+                <h1 data-aos="zoom-in" data-aos-duration="2500">
                     Your round, your way
                 </h1>
 
-                <p class="subheadline">
+                <p data-aos="flip-down" data-aos-delay="800" data-aos-duration="600" data-aos-easing="linear" class="subheadline">
                     Enjoy our honest reviews of the best golf courses with full buggy access for a smooth and effortless
                     round
                 </p>
@@ -85,7 +85,7 @@
                 </p>
             </div>
             <!-- Container de Cards -->
-            <div class="contenedor-nuevas row">
+            <div data-aos="fade-up" data-aos-duration="2500" class="contenedor-nuevas row">
                 <!-- Card 1 -->
                 <div class="card-nueva col-4">
                     <div class="img-contenedor">
@@ -450,7 +450,7 @@
                             you!
                         </p>
                     </div>
-                    <div class="col-12 col-md-8 map-container">
+                    <div data-aos="flip-right" class="col-12 col-md-8 map-container">
                         <iframe class="map"
                             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d581950.838579375!2d-82.01402696234443!3d28.433231376818295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFlorida%20golf%20courses!5e0!3m2!1ses!2sar!4v1740682131712!5m2!1ses!2sar"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -506,6 +506,10 @@
         crossorigin="anonymous"></script>
         <!-- Script AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- AOS Init -->
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>

@@ -20,12 +20,16 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
   }
 }
 
-.container-fluid .contact-wrapper .row .img-contact img, .opinion-section .container .card, .reviews-stats-section, .review-section div a, .review-section div h2 {
+.container-fluid .contact-wrapper .row .img-contact img, .modal .modal-dialog .modal-content .modal-body .opinion-section .container .card, .modal .modal-dialog .modal-content .modal-body .reviews-stats-section, .review-section div a, .review-section div h2 {
   box-shadow: 0px 16px 40px -8px rgba(88, 92, 95, 0.16);
 }
 
-.newsletter-section .newsletter-wrapper form #newsletter-button, .hero-search .container .searchbar button, .hero div div form button {
-  background-color: #b9997c;
+.container-fluid .contact-wrapper .send-button button, .modal .modal-dialog .modal-content .modal-footer .btn-primary, .section-carrousel-review .contenedor-nuevas .card-nueva .card-cuerpo .distance-container button, .newsletter-section .newsletter-wrapper div form button, .hero-search .container .searchbar button, .review-section div a, .hero div div form button {
+  background-color: #20b9a6;
+  border-color: #b9997c;
+}
+.container-fluid .contact-wrapper .send-button button:hover, .modal .modal-dialog .modal-content .modal-footer .btn-primary:hover, .section-carrousel-review .contenedor-nuevas .card-nueva .card-cuerpo .distance-container button:hover, .newsletter-section .newsletter-wrapper div form button:hover, .hero-search .container .searchbar button:hover, .review-section div a:hover, .hero div div form button:hover {
+  background-color: #157a6e;
 }
 
 .hero {
@@ -202,7 +206,7 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
   text-align: center;
 }
 .review-section div h2 {
-  color: #82e9dd;
+  color: #43dfcc;
 }
 .review-section div p {
   font-size: 1.375rem;
@@ -210,7 +214,7 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
   line-height: auto;
   color: #413d47;
   text-align: center;
-  color: #9892b1;
+  color: #b1adc7;
 }
 @media (max-width: 768px) {
   .review-section div p {
@@ -404,12 +408,15 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
   text-align: center;
   margin: 2rem 0 2 rem 0;
 }
+.newsletter-section .newsletter-wrapper {
+  justify-content: center;
+}
 .newsletter-section .newsletter-wrapper h2 {
   color: #f2f2f2;
 }
 @media (max-width: 768px) {
   .newsletter-section .newsletter-wrapper h2 {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 }
 @media (max-width: 768px) {
@@ -418,41 +425,156 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
     font-weight: 500;
   }
 }
-.card {
+.newsletter-section .newsletter-wrapper div {
+  width: 100%;
+  justify-content: center;
+}
+.newsletter-section .newsletter-wrapper div form {
+  justify-content: center;
+}
+.newsletter-section .newsletter-wrapper div form input {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .newsletter-section .newsletter-wrapper div form input {
+    width: 60%;
+  }
+}
+.hero-review {
+  height: 25rem;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #ccc9dc 0%, #157a6e 100%);
+  height: 200px;
+}
+@media (max-width: 768px) {
+  .hero-review {
+    height: 18rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .hero-review {
+    height: 150px;
+  }
+}
+.hero-review .container {
+  text-align: center;
+  height: 100%;
+}
+.hero-review .container h1 {
+  color: #d0bba8;
+}
+.hero-review .container p {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: auto;
+  color: #413d47;
+  text-align: center;
+  color: #ccc9dc;
+}
+@media (max-width: 768px) {
+  .hero-review .container p {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .hero-review .container p {
+    color: #157a6e;
+  }
+}
+
+.section-carrousel-review {
+  height: 35rem;
+  align-content: center;
+}
+.section-carrousel-review .contenedor-nuevas {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+@media (max-width: 768px) {
+  .section-carrousel-review .contenedor-nuevas {
+    overflow-x: auto;
+  }
+}
+.section-carrousel-review .contenedor-nuevas .card-nueva {
+  width: 30rem;
+  height: 20rem;
+  margin: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  box-shadow: 0px 16px 40px -8px rgba(88, 92, 95, 0.16);
+}
+.section-carrousel-review .contenedor-nuevas .card-nueva:hover {
+  background-color: #b9997c;
+}
+@media (max-width: 768px) {
+  .section-carrousel-review .contenedor-nuevas .card-nueva {
+    width: 80%;
+  }
+}
+.section-carrousel-review .contenedor-nuevas .card-nueva .img-contenedor img {
+  height: 12.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0px 2px 4px 0px rgba(27, 28, 29, 0.04);
+}
+.section-carrousel-review .contenedor-nuevas .card-nueva .card-cuerpo h5 {
+  color: #157a6e;
+  font-size: 1.375rem;
+  padding-top: 0.5rem;
+}
+.section-carrousel-review .contenedor-nuevas .card-nueva .card-cuerpo div svg {
+  color: #d0bba8;
+}
+.section-carrousel-review .contenedor-nuevas .card-nueva .card-cuerpo .direction-container {
+  padding-bottom: 1rem;
+}
+.section-carrousel-review .contenedor-nuevas .card-nueva .card-cuerpo .direction-container p {
+  font-size: 0.625rem;
+  color: #565161;
+}
+
+.modal .modal-dialog .modal-content .modal-body .card {
   height: 25rem;
   display: flex;
 }
-.card img {
+.modal .modal-dialog .modal-content .modal-body .card img {
   height: 100%;
   object-fit: cover;
   object-position: 100% 90%;
   opacity: 0.5;
 }
 @media (max-width: 768px) {
-  .card img {
+  .modal .modal-dialog .modal-content .modal-body .card img {
     object-position: 40% 60%;
   }
 }
-.card .card-img-overlay {
+.modal .modal-dialog .modal-content .modal-body .card .card-img-overlay {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin: 0 0 1rem 1rem;
 }
-.card .card-img-overlay h5 {
+.modal .modal-dialog .modal-content .modal-body .card .card-img-overlay h5 {
   color: #f2f2f2;
   font-size: 2rem;
 }
 @media (max-width: 768px) {
-  .card .card-img-overlay h5 {
+  .modal .modal-dialog .modal-content .modal-body .card .card-img-overlay h5 {
     font-size: 1.375rem;
   }
 }
-.card .card-img-overlay .card-text {
+.modal .modal-dialog .modal-content .modal-body .card .card-img-overlay .card-text {
   color: #ccc9dc;
 }
-
-.reviews-stats-section {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section {
   width: 100%;
   margin-top: 2rem;
   border-radius: 0.625rem;
@@ -460,18 +582,18 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
   background-color: #b1adc7;
 }
 @media (max-width: 768px) {
-  .reviews-stats-section {
+  .modal .modal-dialog .modal-content .modal-body .reviews-stats-section {
     width: 90%;
   }
 }
-.reviews-stats-section h2 {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section h2 {
   height: 40px;
   font-size: 2.375rem;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 20px;
 }
-.reviews-stats-section .reviews-stats {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section .reviews-stats {
   width: 100%;
   height: 50%;
   display: flex;
@@ -479,7 +601,7 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
   align-items: center;
   justify-content: center;
 }
-.reviews-stats-section .reviews-stats ul {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section .reviews-stats ul {
   text-align: center;
   display: flex;
   gap: 5rem;
@@ -488,100 +610,101 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
   margin-bottom: 2.5rem;
 }
 @media (max-width: 768px) {
-  .reviews-stats-section .reviews-stats ul {
+  .modal .modal-dialog .modal-content .modal-body .reviews-stats-section .reviews-stats ul {
     width: 80%;
     gap: 1rem;
     justify-content: center;
   }
 }
-.reviews-stats-section .reviews-stats ul li {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section .reviews-stats ul li {
   width: 100%;
   height: 30%;
   color: #157a6e;
 }
-.reviews-stats-section .reviews-stats ul li .stat-name {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section .reviews-stats ul li .stat-name {
   font-size: 1.125rem;
   font-weight: 500;
   height: 0.85rem;
   color: #2d2a2f;
 }
-.reviews-stats-section .reviews-stats ul li .stat-value {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section .reviews-stats ul li .stat-value {
   font-size: 1.625rem;
   font-weight: 700;
   height: 20px;
   color: #157a6e;
 }
-.reviews-stats-section .reviews-stats ul li .stat-caption {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section .reviews-stats ul li .stat-caption {
   font-size: 0.9375rem;
   font-style: italic;
   height: 2rem;
   color: #2d2a2f;
 }
-.reviews-stats-section div h2 {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section div h2 {
   height: 2.5rem;
   font-size: 2rem;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 20px;
 }
-.reviews-stats-section div .reviews-summary {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section div .reviews-summary {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.reviews-stats-section div .reviews-summary ul {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section div .reviews-summary ul {
+  width: 80%;
   text-align: center;
   display: flex;
   list-style: none;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
-  .reviews-stats-section div .reviews-summary ul {
+  .modal .modal-dialog .modal-content .modal-body .reviews-stats-section div .reviews-summary ul {
     flex-wrap: wrap;
   }
 }
-.reviews-stats-section div .reviews-summary ul li {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section div .reviews-summary ul li {
   width: 3rem;
   height: 2rem;
 }
-.reviews-stats-section div .reviews-summary ul li img {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section div .reviews-summary ul li img {
   width: 3rem;
 }
-.reviews-stats-section div .reviews-summary ul li p {
+.modal .modal-dialog .modal-content .modal-body .reviews-stats-section div .reviews-summary ul li p {
   font-size: 0.875rem;
   font-style: italic;
   height: 0.5rem;
 }
-
-.opinion-section {
+.modal .modal-dialog .modal-content .modal-body .opinion-section {
   margin: 4rem 0 4rem 0;
 }
-.opinion-section .container h2 {
+.modal .modal-dialog .modal-content .modal-body .opinion-section .container h2 {
   height: 40px;
   font-size: 2.375rem;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 20px;
 }
-.opinion-section .container .card {
+.modal .modal-dialog .modal-content .modal-body .opinion-section .container .card {
   max-height: fit-content;
   height: 15.5rem;
 }
 @media (max-width: 768px) {
-  .opinion-section .container .card {
+  .modal .modal-dialog .modal-content .modal-body .opinion-section .container .card {
     width: 95%;
     height: auto;
   }
 }
 @media (max-width: 768px) {
-  .opinion-section .container .card .row .img-wrapper {
+  .modal .modal-dialog .modal-content .modal-body .opinion-section .container .card .row .img-wrapper {
     height: fit-content;
     width: auto;
   }
 }
-.opinion-section .container .card .row .img-wrapper img {
+.modal .modal-dialog .modal-content .modal-body .opinion-section .container .card .row .img-wrapper img {
   width: 100%;
   height: 12.5rem;
   object-fit: cover;
@@ -589,16 +712,20 @@ h3, h2, h1, .section-carrousel div .subheadline-h2 {
   margin: 0.5rem;
 }
 @media (max-width: 768px) {
-  .opinion-section .container .card .row .img-wrapper img {
+  .modal .modal-dialog .modal-content .modal-body .opinion-section .container .card .row .img-wrapper img {
     height: 50%;
     width: 95%;
   }
 }
-.opinion-section .container .card .row .card-content .card-body h5 {
+.modal .modal-dialog .modal-content .modal-body .opinion-section .container .card .row .card-content .card-body h5 {
   color: #157a6e;
 }
-.opinion-section .container .card .row .card-content .card-body p {
+.modal .modal-dialog .modal-content .modal-body .opinion-section .container .card .row .card-content .card-body p {
   color: #2d2a2f;
+}
+.modal .modal-dialog .modal-content .modal-footer .btn-primary a {
+  color: #f2f2f2;
+  text-decoration: none;
 }
 
 .container-fluid {
