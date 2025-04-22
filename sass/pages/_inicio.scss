@@ -1,0 +1,178 @@
+// Hero Section
+.hero {
+    @include section-centered;
+    @extend %hero;
+
+    div {
+        p {
+            @include subheadline;
+            color: $colors-secondary-400;
+        }
+
+        div {
+            form {
+                button {
+                    @extend %button-bg;
+                }
+            }
+        }
+    }
+}
+
+
+// Seccion Carrousel
+
+.section-carrousel {
+    height: 35rem;
+    align-content: center;
+
+    div {
+        h2 {
+            color: $colors-primary-400;
+        }
+
+        .subheadline-h2 {
+            @include subheadline;
+            @extend %font-centered;
+        }
+    }
+
+    .contenedor-nuevas {
+        flex-wrap: nowrap;
+        overflow-x:auto;
+        @media (max-width:768px) {
+            overflow-x: auto;
+            
+        }
+
+        .card-nueva {
+            width: 30rem;
+            height: 20rem;
+            margin: 1rem;
+            background-color: $colors-neutral-white;
+            border-radius: $radius-xl;
+            padding: 0.5rem;
+            box-shadow: 0px 16px 40px -8px rgba(88, 92, 95, 0.16);
+
+            &:hover {
+                background-color: $colors-secondary-200;
+            }
+
+            @media (max-width:768px) {
+                width: 80%;
+            }
+
+            .img-contenedor {
+                img {
+                    height: 12.5rem;
+                    width: 100%;
+                    border-radius: $radius-m ;
+                    object-fit: cover;
+                    box-shadow: 0px 2px 4px 0px rgba(27, 28, 29, 0.04);
+                }
+            }
+
+            .card-cuerpo {
+                h5 {
+                    color: $colors-primary-400;
+                    font-size: $fonts-size-font-size-m;
+                    padding-top: 0.5rem;
+
+                }
+
+                div {
+                    svg {
+                        color: $colors-secondary-100;
+                    }
+                }
+
+                .distance-container {
+                    .distance {
+                        font-size: $fonts-size-font-size-m;
+                        font-weight: 600;
+                        color: $colors-primary-500;
+
+                    }
+                }
+
+                .direction-container {
+                    padding-bottom: 1rem;
+                    p {
+                        font-size: $fonts-size-font-size-3xxs;
+                        color: $colors-neutral-600;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+// Section Mapa
+.map-section {
+    @include section-centered;
+
+    .container {
+        height: 75%;
+
+        h2 {
+            margin: 1rem 0 1rem 0;
+
+        }
+
+        .row {
+            height: 80%;
+
+            .text-container {
+                p {
+                    @include subheadline;
+                    text-align: start;
+                }
+            }
+
+            .map-container {
+                height: 100%;
+
+                iframe {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 0.85rem;
+
+                    @media (max-width:768px) {
+                        height: 80%;
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.review-section {
+    background: linear-gradient(0deg, rgba(204, 201, 220, 0.00) 73.13%, rgba(204, 201, 220, 0.30) 86.56%, var(--Colors-Neutral-100, #CCC9DC) 100%), linear-gradient(180deg, rgba(204, 201, 220, 0.00) 74%, rgba(204, 201, 220, 0.30) 85.53%, var(--Colors-Neutral-100, #CCC9DC) 97.06%), linear-gradient(0deg, rgba(114, 86, 61, 0.80) 0%, rgba(114, 86, 61, 0.80) 100%), url(../img/kiawah-7.jpg) lightgray 50% / cover no-repeat;
+    @include cta-centered;
+    background-position: center;
+
+    div {
+        text-align: center;
+
+        h2 {
+            @extend %shadow-3;
+            color: $colors-primary-100
+        }
+
+        p {
+            @include subheadline;
+            color: $colors-neutral-300;
+
+        }
+
+        a {
+            height: 100%;
+            @extend %shadow-3;
+        }
+    }
+}

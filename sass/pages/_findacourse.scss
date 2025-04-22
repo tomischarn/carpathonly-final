@@ -1,0 +1,186 @@
+.hero-search {
+    @include section-centered-s;
+    background: linear-gradient(0deg, $colors-neutral-100 0%, $colors-primary-400 100%);
+
+    .container {
+        text-align: center;
+        height: 100%;
+
+        h1 {
+            color: $colors-secondary-100;
+
+        }
+
+        p {
+            @include subheadline;
+            color: $colors-neutral-100;
+            @media (max-width:768px) {
+                color: $colors-primary-400;
+                
+            }
+
+        }
+        .searchbar {
+            width: 50%;
+            @media (max-width:768px) {
+                width: 100%;
+                
+            }
+
+            button {
+                @extend %button-bg
+            }
+        }
+    }
+}
+
+
+
+.resultados-wrapper {
+    display: flex;
+    flex-direction: column;
+    @media (max-width:768px) {
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+    }
+
+    h3 {
+        text-align: start;
+        padding-left: 2.5rem;
+
+        @media (max-width:768px) {
+            text-align: center;
+            padding-left: 0;
+        }
+
+    }
+
+    .resultados {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            .card-hztal {
+                max-width: 100%;
+                max-height: 15rem;
+                flex-direction: row;
+                margin-bottom: 0.5rem;
+                @media (max-width:768px) {
+                    max-height: 350px;
+                }
+                
+                img {
+                    max-height: 85%;
+                    max-width: 30%;
+                    border-radius: 0.25rem;
+                    padding: 0.5 rem;
+                    margin: 1rem;
+                    @media (max-width:768px) {
+                        max-height: 90%;
+                        
+                    }
+                }
+
+                .card-body {
+                    display: flex;
+                    justify-content: space-between;
+                    @media (max-width:768px) {
+                        flex-direction: column;
+                    }
+                    .card-main-section {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: space-between;
+                        max-width: 40%;
+                        @media (max-width:768px) {
+                            max-width: 100%;
+                        }
+                        .text-section {
+                            h5 {
+                                color: $colors-primary-400;
+                                @media (max-width:768px) {
+                                    font-size: 1rem;
+                                }
+                            }
+
+                            p {
+                                @media (max-width:768px) {
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+
+                        span {
+                            svg {color: $colors-secondary-100}
+                        }
+
+                    }
+
+                    .stat-section {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        @media (max-width:768px) {
+                            align-items: flex-start;
+                            margin-top: 0.8rem;
+                        }
+                        .icons-top-card {
+                            display: flex;
+                            justify-content: center;
+                            gap: 1rem;
+                            text-align: center;
+                            @media (max-width:768px) {
+                                justify-content: space-between;
+                                gap: 0.8rem;
+                                font-size:0.8rem;
+                            }
+
+                        }
+                    }
+
+                    .badge-section {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap:0.25rem;
+                        justify-content: flex-end;
+                        @media (max-width:768px) {
+                            gap: 0.2rem;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.newsletter-section{
+    height: 20rem;
+    align-content: center;
+    justify-content: center;
+    background-color: $colors-primary-400;
+    text-align: center;
+    margin: 2rem 0 2 rem 0;
+    .newsletter-wrapper{
+        h2{
+            color: $colors-neutral-white;
+            @media (max-width:768px) {
+                font-size: $fonts-size-font-size-s;
+            }
+        }
+        p{
+            @media (max-width:768px) {
+                font-size: $fonts-size-font-size-xs;
+                font-weight: 500;   
+            }
+        }
+        form{
+            #newsletter-button{
+                @extend %button-bg;
+            }
+        }
+    }
+}

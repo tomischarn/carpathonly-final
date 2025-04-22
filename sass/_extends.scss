@@ -1,0 +1,46 @@
+// Font-centered
+%font-centered {
+    line-height: auto;
+    text-align: center;
+}
+
+
+// Hero-bg
+
+%hero {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #CCC9DC 95.46%), linear-gradient(180deg, rgba(21, 122, 110, 0.16) 0%, rgba(21, 122, 110, 0.80) 82.37%), url(../img/torrey-pines-1.jpeg) lightgray 50% / cover no-repeat;
+
+@media (max-width:768px) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #CCC9DC 95.46%), linear-gradient(180deg, rgba(21, 122, 110, 0.16) 0%, rgba(21, 122, 110, 0.80) 82.37%), url(../img/torrey-pines-1.jpeg) lightgray 50% / cover no-repeat;
+    align-content: center;
+    justify-content: center;
+    height: 37.5rem;
+}
+@media (min-width:769px) {
+    .searchbar {
+        max-width: 50%;
+    }
+}
+}
+
+// Shadows
+
+%shadow-1{
+    box-shadow: 0px 2px 4px 0px rgba(27, 28, 29, 0.04);
+}
+
+%shadow-2{
+    box-shadow: 0px 16px 32px -12px rgba(88, 92, 95, 0.10);
+   
+}
+
+%shadow-3{
+    box-shadow: 0px 16px 40px -8px rgba(88, 92, 95, 0.16);
+}
+
+
+// Button Background
+
+%button-bg{
+    background-color: $colors-secondary-200;
+}

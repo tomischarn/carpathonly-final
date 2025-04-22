@@ -1,0 +1,60 @@
+@mixin subheadline {
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: auto;
+    color: $colors-neutral-700;
+    text-align: center;
+
+    @media (max-width:768px) {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: auto;
+            text-align: center;
+    }
+}
+
+
+// Bigger Section
+
+@mixin section-centered {
+height: 50rem;
+align-content: center;
+justify-content: center;
+
+@media (max-width: 768px) {
+    height: 37.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+}
+
+// Smaller Section
+@mixin section-centered-s {
+    height: 25rem;
+    align-content: center;
+    justify-content: center;
+    
+    @media (max-width: 768px) {
+        height: 18rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    }
+
+
+@mixin cta-centered {
+    height: 20rem;
+    align-content: center;
+    justify-content: center;
+    
+    @media (max-width: 768px) {
+        height: 15rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    }
+
+
+
+
+    // Shadows

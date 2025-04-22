@@ -1,0 +1,59 @@
+.container-fluid{
+    background-color: $colors-neutral-white;
+    height: auto;
+    padding: 1rem;
+    .contact-wrapper{
+        height: auto;
+        .row{
+            div{
+                .card-body{
+                    height: fit-content;
+                    padding-bottom: 40px;
+                
+                    h1{
+                        color: $colors-primary-400;
+                        @media (max-width:768px) {
+                            font-size: $fonts-size-font-size-2xxl;
+                            
+                        }
+                    }
+                    p{
+                        @include subheadline;
+                    }
+                    div{
+                        label{
+
+                        }
+                        input{
+
+                        }
+                        textarea{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .img-contact{
+                align-content: center;
+                @media (max-width:768px) {
+                    display: none;
+                    
+                }
+                img{
+                    height: auto;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                    @extend %shadow-3;
+                }
+            }
+        }
+        .send-button{
+            justify-content: center;
+            padding: 1rem;
+            button{
+                width: 30%;
+            }
+        }
+    }
+}

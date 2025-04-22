@@ -1,0 +1,213 @@
+.reviews-section{
+    height: auto;
+    background: linear-gradient(0deg, $colors-neutral-100 0%, $colors-primary-400 100%);
+    .review-titlesection{
+        align-content: center;
+        justify-content: center;
+     h1{
+        color: $colors-secondary-100;
+
+     }  
+     p{
+        @include subheadline;
+        color: $colors-neutral-100;
+
+     } 
+    }
+    .container{
+        width: 80%;
+        text-align: start;
+        div{
+            width: 50%;
+            text-align: start;
+
+        }
+        h6{
+
+        }
+        select{
+            width: 50%;
+            option{
+            }
+        }
+
+        .star-container{
+            div{
+                h6{
+                    text-align: start;
+                
+
+                }
+                .checked{
+                    color: $colors-secondary-400;
+                }
+            }
+
+            
+            
+
+        }
+        .switch-area{
+            width: 100%;
+            h6{
+
+            }
+            .row{
+                .col-6{
+                    div{
+                        input{
+
+                        }
+                        label{
+                            text-align: start;
+
+                        }
+                    }
+                }
+                .form-check{
+                    input{
+
+                    }
+                    label{
+
+                    }
+                }
+            }
+        }
+        .review-area{
+            h6{
+
+            }
+            div{
+                width: 100%;
+                span{
+
+                }
+                textarea{
+
+                }
+            }
+        }
+
+        .upload-file{
+            h6{
+
+            }
+            div{
+                width: 100%;
+                input{
+
+                }
+            }
+        }
+        .send-button{
+            
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .reviews-section{
+        height: 100vh;    
+        @include section-centered;
+        margin-bottom: 500px;
+        .review-titlesection{
+            align-content: center;
+            justify-content: center;
+         h1{
+    
+         }  
+         p{
+    
+         } 
+        }
+        .container{
+            width: 100%;
+            text-align: center;
+            div{
+                width: 80%;
+                text-align: start;
+    
+            }
+            h6{
+    
+            }
+            select{
+                width: 80%;
+                option{
+                }
+            }
+    
+            .container-row{
+                div{
+                    h6{
+                        text-align: start;
+    
+                    }
+                    span{
+    
+                    }
+                }
+    
+            }
+            .switch-area{
+                width: 100%;
+                h6{
+    
+                }
+                .row{
+                    .col-6{
+                        div{
+                            input{
+    
+                            }
+                            label{
+                                text-align: start;
+    
+                            }
+                        }
+                    }
+                    .form-check{
+                        input{
+    
+                        }
+                        label{
+    
+                        }
+                    }
+                }
+            }
+            .review-area{
+                h6{
+    
+                }
+                div{
+                    width: 100%;
+                    span{
+    
+                    }
+                    textarea{
+    
+                    }
+                }
+            }
+    
+            .upload-file{
+                h6{
+    
+                }
+                div{
+                    width: 100%;
+                    input{
+    
+                    }
+                }
+            }
+            .send-button{
+                width: 50%;
+                justify-self: center;
+            }
+        }
+
+    }
+}

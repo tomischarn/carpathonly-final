@@ -1,0 +1,161 @@
+@import 'primitivas';
+@import 'extends';
+@import 'mixins' ;
+@import 'pages/inicio';
+@import 'pages/findacourse';
+@import 'pages/reviews' ;
+@import 'pages/contacto';
+@import 'pages/postyours';
+
+
+// Reseteo
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+
+// Generales
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $colors-neutral-100;
+}
+
+h1 {
+    @extend %font-centered;
+    font-size: $fonts-size-font-size-4xxl;
+    font-weight: 800;
+    color: $colors-primary-500;
+    text-shadow: 0px 16px 40px rgba(88, 92, 95, 0.16);
+}
+
+h2 {
+    font-size: $fonts-size-font-size-xxl;
+    font-weight: 600;
+    @extend %font-centered;
+    color: $colors-primary-400;
+
+}
+
+h3 {
+    font-size: $fonts-size-font-size-xl;
+    font-weight: 500;
+    color: $colors-primary-400;
+    @extend %font-centered;
+}
+
+h4 {
+    font-size: $fonts-size-font-size-l;
+    font-weight: 500;
+    line-height: auto;
+}
+
+
+h5 {
+    font-size: $fonts-size-font-size-s;
+    color: #157A6E;
+    font-size: $fonts-size-font-size-s;
+    font-weight: 600;
+    line-height: auto;
+}
+
+h6 {
+    font-size: $fonts-size-font-size-xs;
+    font-weight: 500;
+    line-height: auto;
+
+}
+
+
+p {
+    font-size: $fonts-size-font-size-xxs;
+}
+
+
+// Estilos Header & Footer
+
+header {
+    background-color: $colors-primary-400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        height: 2.5rem;
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        padding-right: 1.25rem;
+
+        ul {
+            display: inline-flex;
+            list-style: none;
+            gap: 1.25rem;
+            align-items: center;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $colors-neutral-white;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: $fonts-line-height-line-height-2xxs;
+                }
+            }
+        }
+    }
+
+    img {
+        max-width: 10rem;
+        max-height: 1.56rem;
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+
+footer {
+    background-color: $colors-primary-400;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+    .container {
+        div {
+            ul {
+                display: inline-flex;
+                list-style: none;
+                gap: 20px;
+                align-items: center;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $colors-neutral-100;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+        a {
+            img {
+                max-width: 10rem;
+                max-height: 1.56rem;
+                margin-top: 1.25rem;
+                margin-left: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+}
+
+
